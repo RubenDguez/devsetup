@@ -52,7 +52,7 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { import = "plugins" },
 
-    -- Everforest colorscheme plugin
+    -- Everforest colorscheme
     {
       "sainnhe/everforest",
       lazy = false,
@@ -116,10 +116,6 @@ vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { noremap = true,
 vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>", { noremap = true, silent = true })
-
--- Jump to start/end of line using bh/bl
-vim.keymap.set("n", "bh", "0", { noremap = true, silent = true }) -- start of line
-vim.keymap.set("n", "bl", "$", { noremap = true, silent = true }) -- end of line
 EOF
 
 # 7️⃣ Headless plugin update & sync
