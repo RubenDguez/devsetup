@@ -110,8 +110,10 @@ end, { noremap = true, silent = true })
 -- Buffer navigation
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>bp", ":bprevious<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>gt", "gg", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>gb", "G", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>bt", "gg", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>bb", "G", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>bh", "^", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>bl", "$", { noremap = true, silent = true})
 
 -- Telescope keymaps
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { noremap = true, silent = true })
